@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CourseDetails</title>
+    <style>
+      table {
+        text-align: center;
+      }
+
+      tbody td:first-child {
+        text-align: left;
+      }
+      .inline-form {
+        display: inline-block;
+      }
+      .grey-line {
+        height: 2px;
+        background-color: lightgrey;
+        margin: 8px 0;
+        width: 100%;
+      }
+      .container {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <table width="100%">
+      <tr>
+        <th style="text-align: left; vertical-align: top">
+          <ul style="margin-top: 0">
+            <li><a href="/public/kanbas/profile/index.html">Account</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="/public/kanbas/home.html">Courses</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Inbox</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Studio</a></li>
+            <li><a href="#">Commons</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </th>
+        <th style="text-align: left; vertical-align: top">
+          <ul style="margin-top: 0">
+            <li><a href="/public/kanbas/home.html">Home</a></li>
+            <li><a href="#">Modules</a></li>
+            <li><a href="#">Piazza</a></li>
+            <li><a href="#">Zoom Meetings</a></li>
+            <li>
+              <a href="/public/kanbas/assignments/index.html">Assignments</a>
+            </li>
+            <li><a href="#">Quizes</a></li>
+            <li><a href="/public/kanbas/grades.html">Grades</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Panopto Video</a></li>
+            <li><a href="#">Discussions</a></li>
+            <li><a href="#">Announcements</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Files</a></li>
+            <li><a href="#">Rubrics</a></li>
+            <li><a href="#">Outcomes</a></li>
+            <li><a href="#">Collaborations</a></li>
+            <li><a href="#">Syllabus</a></li>
+            <li>
+              <a href="/public/kanbas/settings/course-details.html">Settings</a>
+            </li>
+          </ul>
+        </th>
+        <th style="text-align: left; vertical-align: top">
+          <button type="button">
+            <a href="/public/kanbas/settings/course-details.html"
+              >Course Details</a
+            >
+          </button>
+          <button type="button"><a href="#">Sections</a></button>
+          <button type="button">
+            <a href="/public/kanbas/settings/navigation.html">Navigation</a>
+          </button>
+          <button type="button"><a href="#">Apps</a></button>
+          <button type="button"><a href="#">Feature Options</a></button>
+          <button type="button"><a href="#">Integrations</a></button>
+
+          <br />
+          <h1>Course Details</h1>
+          <table width="100%">
+            <tr>
+              <th style="text-align: left; vertical-align: center">
+                <label class="inline-form" for="images">Images: </label>
+              </th>
+              <th style="text-align: left; vertical-align: top">
+                <table
+                  class="inline-form"
+                  border="1"
+                  cellspacing="0"
+                  cellpadding="10"
+                  style="border-color: lightgray"
+                >
+                  <tr>
+                    <td align="center">
+                      <a href="#">Choose Image</a>
+                    </td>
+                  </tr>
+                </table>
+              </th>
+            </tr>
+            <tr>
+              <th style="text-align: left; vertical-align: center">
+                <label class="inline-form" for="name">Name: </label>
+              </th>
+              <th style="text-align: left; vertical-align: top">
+                <p class="inline-form">
+                  CS5610 Web Development Fall 2023 [Online]
+                </p>
+              </th>
+            </tr>
+            <tr>
+              <th style="text-align: left; vertical-align: center">
+                <label class="inline-form" for="CourseCode"
+                  >Course Code:
+                </label>
+              </th>
+              <th style="text-align: left; vertical-align: center">
+                <p class="inline-form">CS5610</p>
+              </th>
+            </tr>
+            <tr>
+              <th style="text-align: left; vertical-align: center">
+                <label class="inline-form" for="BlueprintCourse"
+                  >Blueprint Course:
+                </label>
+              </th>
+              <th style="text-align: left; vertical-align: center">
+                <p class="inline-form">No</p>
+              </th>
+            </tr>
+            <tr>
+              <th style="text-align: left; vertical-align: center">
+                <label class="inline-form" for="CourseTemplate"
+                  >Course Template:
+                </label>
+              </th>
+              <th style="text-align: left; vertical-align: center">
+                <input
+                  type="checkbox"
+                  value="CourseTemplate"
+                  name="check-genre"
+                  id="CourseTemplate"
+                />
+                <label for="CourseTemplate"
+                  >Enable course as a Course Template</label
+                >
+              </th>
+            </tr>
+            <tr>
+              <th style="text-align: left; vertical-align: center">
+                <label class="inline-form" for="timezone">Time Zone: </label>
+              </th>
+              <th style="text-align: left; vertical-align: center">
+                <select id="select-one-genre">
+                  <option value="eastern">
+                    Eastern Time (US & Canada) (-5:00/-04:00)
+                  </option>
+                </select>
+              </th>
+            </tr>
+            <tr>
+              <th style="text-align: left; vertical-align: center">
+                <label class="inline-form" for="SISID">SIS ID: </label>
+              </th>
+              <th style="text-align: left; vertical-align: center">
+                <p>CS4550.12631.202410</p>
+              </th>
+            </tr>
+            <tr>
+              <th style="text-align: left; vertical-align: center">
+                <label class="inline-form" for="subaccount">Subaccount: </label>
+              </th>
+              <th style="text-align: left; vertical-align: center">
+                <p style="color: red">CS Undergrad</p>
+              </th>
+            </tr>
+            <tr>
+              <th style="text-align: left; vertical-align: center">
+                <label class="inline-form" for="term">Term: </label>
+              </th>
+              <th style="text-align: left; vertical-align: center">
+                <p>202410_1 Fall 2023 Semester Full Term</p>
+              </th>
+            </tr>
+            <tr>
+              <th style="text-align: left; vertical-align: center">
+                <label class="inline-form" for="participation"
+                  >Participation:
+                </label>
+              </th>
+              <th style="text-align: left; vertical-align: center">
+                <select id="select-one-genre">
+                  <option value="term">Term</option>
+                </select>
+                <p>
+                  Course participation is limited to term start and end dates.
+                </p>
+                <label for="start">Start </label><br />
+                <input
+                  type="date"
+                  id="start-date"
+                  value="2023-01-01"
+                /><br /><br />
+                <label for="start">End </label><br />
+                <input
+                  type="date"
+                  id="start-date"
+                  value="2025-01-01"
+                /><br /><br />
+                <input
+                  type="checkbox"
+                  value="restrict"
+                  name="check-genre"
+                  id="chkbox-restrict"
+                />
+                <label for="chkbox-restrict"
+                  >Restrict students from viewing course before term start
+                  date</label
+                >
+                <br />
+                <input
+                  type="checkbox"
+                  value="restrict"
+                  name="check-genre"
+                  id="chkbox-restrict"
+                />
+                <label for="chkbox-restrict"
+                  >Restrict students from viewing course after term end
+                  date</label
+                >
+              </th>
+            </tr>
+            <tr>
+              <th style="text-align: left; vertical-align: center">
+                <label class="inline-form" for="defaulttime"
+                  >Default due time:
+                </label>
+              </th>
+              <th style="text-align: left; vertical-align: center">
+                <select id="select-one-genre">
+                  <option value="defaulttime">Account default (11:59pm)</option>
+                </select>
+                <p>
+                  This imfluences the user interface for setting due dates. It
+                  does not change the time due for any existing assignments
+                </p>
+              </th>
+            </tr>
+            <tr>
+              <th style="text-align: left; vertical-align: center">
+                <label class="inline-form" for="language">Language: </label>
+              </th>
+              <th style="text-align: left; vertical-align: center">
+                <select id="select-one-genre">
+                  <option value="language">
+                    Not set (user-configurable, defaults to English
+                  </option>
+                </select>
+                <p>
+                  This will override any user/system language preferences. This
+                  is only recommended for foreign langage courses.
+                </p>
+              </th>
+            </tr>
+            <tr>
+              <th style="text-align: left; vertical-align: center">
+                <label class="inline-form" for="filestorage"
+                  >File Storage:
+                </label>
+              </th>
+              <th style="text-align: left; vertical-align: center">
+                <p>10000 megabytes</p>
+              </th>
+            </tr>
+            <tr>
+              <th style="text-align: left; vertical-align: center">
+                <label class="inline-form" for="largecourse"
+                  >Large Course:
+                </label>
+              </th>
+              <th style="text-align: left; vertical-align: center">
+                <input
+                  type="checkbox"
+                  value="largecourse"
+                  name="check-genre"
+                  id="largecourse"
+                />
+                <label for="largecourse"
+                  >Launch SpeedGrader Filtered by Student Group</label
+                >
+              </th>
+            </tr>
+            <tr>
+              <th style="text-align: left; vertical-align: center">
+                <label class="inline-form" for="grading-scheme"
+                  >Grading Scheme:
+                </label>
+              </th>
+              <th style="text-align: left; vertical-align: center">
+                <input
+                  type="checkbox"
+                  value="grading-scheme"
+                  name="check-genre"
+                  id="grading-scheme"
+                />
+                <label for="grading-scheme">Enable course grading scheme</label>
+              </th>
+            </tr>
+            <tr>
+              <th style="text-align: left; vertical-align: center">
+                <label class="inline-form" for="license">License: </label>
+              </th>
+              <th style="text-align: left; vertical-align: center">
+                <select id="select-one-genre">
+                  <option value="license">Private (Copyrighted)</option>
+                </select>
+              </th>
+            </tr>
+            <tr>
+              <th style="text-align: left; vertical-align: center">
+                <label class="inline-form" for="copyright"
+                  >File Copyright:
+                </label>
+              </th>
+              <th style="text-align: left; vertical-align: center">
+                <input
+                  type="checkbox"
+                  value="copyright"
+                  name="check-genre"
+                  id="copyright"
+                />
+                <label for="copyright"
+                  >Copyright and license information must be provided for files
+                  before they are published.</label
+                >
+              </th>
+            </tr>
+            <tr>
+              <th style="text-align: left; vertical-align: center">
+                <label class="inline-form" for="visibility">Visibility: </label>
+              </th>
+              <th style="text-align: left; vertical-align: center">
+                <p>
+                  If you need to make your course public please contact your
+                  administrator/support.
+                </p>
+                <select id="select-one-genre">
+                  <option value="visibility">Course</option>
+                </select>
+                <br />
+                <input
+                  type="checkbox"
+                  value="visibility"
+                  name="check-genre"
+                  id="visibility"
+                />
+                <label for="visibility"
+                  >Include this course in the public course index</label
+                >
+              </th>
+            </tr>
+            <tr>
+              <th style="text-align: left; vertical-align: center">
+                <label class="inline-form" for="format">Format: </label>
+              </th>
+              <th style="text-align: left; vertical-align: center">
+                <select id="select-one-genre">
+                  <option value="format">On-Campus</option>
+                </select>
+              </th>
+            </tr>
+            <tr>
+              <th style="text-align: left; vertical-align: center">
+                <label class="inline-form" for="mastery-paths"
+                  >Mastery Paths:
+                </label>
+              </th>
+              <th style="text-align: left; vertical-align: center">
+                <input
+                  type="checkbox"
+                  value="mastery-paths"
+                  name="check-genre"
+                  id="mastery-paths"
+                />
+                <label for="mastery-paths"
+                  >Enable individual learning paths for students based on
+                  assessment</label
+                >
+              </th>
+            </tr>
+            <tr>
+              <th style="text-align: left; vertical-align: center">
+                <label class="inline-form" for="description"
+                  >Description:
+                </label>
+              </th>
+              <th style="text-align: left; vertical-align: center">
+                <form id="description">
+                  <textarea cols="30" rows="10"></textarea>
+                </form>
+              </th>
+            </tr>
+            <tr>
+              <th style="text-align: left; vertical-align: center"></th>
+              <th style="text-align: left; vertical-align: center">
+                <a href="#" style="color: rgb(181, 27, 27)">more options</a>
+              </th>
+            </tr>
+          </table>
+          <button type="button">Update Course Details</button>
+        </th>
+      </tr>
+    </table>
+  </body>
+</html>

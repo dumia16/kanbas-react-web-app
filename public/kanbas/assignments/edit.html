@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AssignEdit</title>
+    <style>
+      table {
+        text-align: center;
+      }
+
+      tbody td:first-child {
+        text-align: left;
+      }
+      .inline-form {
+        display: inline-block;
+      }
+      .grey-line {
+        height: 2px;
+        background-color: lightgrey;
+        margin: 8px 0;
+        width: 100%;
+      }
+      .container {
+        display: inline-block; /* This ensures the container shrinks to fit its content */
+      }
+    </style>
+  </head>
+  <body>
+    <table width="100%">
+      <tr>
+        <th style="text-align: left; vertical-align: top">
+          <ul style="margin-top: 0">
+            <li><a href="/public/kanbas/profile/index.html">Account</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="/public/kanbas/home.html">Courses</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Inbox</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Studio</a></li>
+            <li><a href="#">Commons</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </th>
+        <th style="text-align: left; vertical-align: top">
+          <ul style="margin-top: 0">
+            <li><a href="/public/kanbas/home.html">Home</a></li>
+            <li><a href="#">Modules</a></li>
+            <li><a href="#">Piazza</a></li>
+            <li><a href="#">Zoom Meetings</a></li>
+            <li>
+              <a href="/public/kanbas/assignments/index.html">Assignments</a>
+            </li>
+            <li><a href="#">Quizes</a></li>
+            <li><a href="/public/kanbas/grades.html">Grades</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Panopto Video</a></li>
+            <li><a href="#">Discussions</a></li>
+            <li><a href="#">Announcements</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Files</a></li>
+            <li><a href="#">Rubrics</a></li>
+            <li><a href="#">Outcomes</a></li>
+            <li><a href="#">Collaborations</a></li>
+            <li><a href="#">Syllabus</a></li>
+            <li>
+              <a href="/public/kanbas/settings/course-details.html">Settings</a>
+            </li>
+          </ul>
+        </th>
+        <th style="text-align: left; vertical-align: top">
+          <div class="container">
+            <select id="select-one-genre">
+              <option selected value="SPEEDGRADER">SpeedGrader</option>
+            </select>
+            <div class="grey-line"></div>
+          </div>
+          <br />
+          <h3>Assignments Name</h3>
+          <form>
+            <input type="text" value="A1 - ENV + HTML" />
+          </form>
+          <br />
+          <form>
+            <textarea cols="20" rows="5" placeholder="Assignment Description">
+This is the assignment description
+</textarea
+            >
+          </form>
+          <br />
+          <form>
+            <label for="points">Points</label><br />
+            <input type="text" value="100" />
+          </form>
+          <br />
+          <form>
+            <label for="assignmentgroup">Assignment Group</label><br />
+            <select id="select-one-genre">
+              <option selected value="ASSIGNMENTS">ASSIGNMENTS</option>
+            </select>
+          </form>
+          <br />
+          <form>
+            <label for="displaygradeas">Display Grade as</label><br />
+            <select id="select-one-genre">
+              <option selected value="PERCENTAGE">Percentage</option>
+            </select>
+          </form>
+          <br />
+          <form>
+            <label for="submissiontype">Submission Type</label><br />
+            <select id="select-one-genre">
+              <option selected value="ONLINE">Online</option>
+            </select>
+          </form>
+          <br />
+          <label>Online Entry Options</label>
+          <br />
+          <input
+            type="checkbox"
+            value="Text Entry"
+            name="check-genre"
+            id="chkbox-textentry"
+          />
+          <label for="chkbox-comedy">Text Entry</label> <br />
+          <input
+            type="checkbox"
+            value="websiteURL"
+            name="check-genre"
+            id="chkbox-websiteURL"
+          />
+          <label for="chkbox-websiteURL">Website URL</label> <br />
+          <input
+            type="checkbox"
+            value="meidiarecordings"
+            name="check-genre"
+            id="chkbox-meidiarecordings"
+          />
+          <label for="chkbox-meidiarecordings">Meidia Recordings</label> <br />
+          <input
+            type="checkbox"
+            value="studentannotation"
+            name="check-genre"
+            id="chkbox-studentannotation"
+          />
+          <label for="chkbox-studentannotation">Student Annotation</label><br />
+          <input
+            type="checkbox"
+            value="fileuploads"
+            name="check-genre"
+            id="chkbox-fileuploads"
+          />
+          <label for="chkbox-fileuploads">File Uploads</label><br />
+          <br />
+          <form>
+            <label for="submissionattemts">Submission Attemts</label><br />
+            <select id="select-one-genre">
+              <option selected value="unlimited">Unlimited</option>
+            </select>
+          </form>
+          <br />
+          <form>
+            <label for="plagiarismreview">Plagiarism Review</label><br />
+            <select id="select-one-genre">
+              <option selected value="none">None</option>
+            </select>
+          </form>
+          <br />
+          <label>Group Assignment</label>
+          <br />
+          <input
+            type="checkbox"
+            value="groupassignment"
+            name="check-genre"
+            id="chkbox-groupassignment"
+          />
+          <label for="chkbox-groupassignment">This is a group assignment</label
+          ><br />
+          <br />
+          <label>Peer Reviews</label>
+          <br />
+          <input
+            type="checkbox"
+            value="peerreview"
+            name="check-genre"
+            id="chkbox-peerreview"
+          />
+          <label for="chkbox-peerreview">Require Peer Reviews</label><br />
+          <br />
+          <form>
+            <label for="assign">Assign</label><br />
+            <label for="assignto">Assign to</label><br />
+            <input type="text" value="Everyone" />
+          </form>
+          <br />
+          <label for="due">Due</label><br />
+          <input type="date" id="due" value="2021-01-01" /><br />
+          <br />
+          <label for="availablefrom">Available from</label><br />
+          <input type="date" id="availablefrom" value="2021-01-01" /><br />
+          <br />
+          <label for="until">Until</label><br />
+          <input type="date" id="until" value="2021-01-01" /><br />
+          <br />
+          <button type="button">
+            <a href="/public/kanbas/assignments/index.html">Cancel</a>
+          </button>
+          <button type="button">
+            <a href="/public/kanbas/assignments/index.html">Save</a>
+          </button>
+        </th>
+      </tr>
+    </table>
+  </body>
+</html>
