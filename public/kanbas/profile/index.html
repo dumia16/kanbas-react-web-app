@@ -5,74 +5,157 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
-    <style>
-      table {
-        text-align: center;
-      }
-
-      tbody td:first-child {
-        text-align: left;
-      }
-      .inline-form {
-        display: inline-block;
-      }
-      .grey-line {
-        height: 2px;
-        background-color: lightgrey;
-        margin: 8px 0;
-        width: 100%;
-      }
-      .container {
-        display: inline-block; /* This ensures the container shrinks to fit its content */
-      }
-    </style>
+    <link href="../../lib/font-awesome/css/all.css" rel="stylesheet" />
+    <link href="../../lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../profile/profile.css" rel="stylesheet" />
+    <link href="../navigation-bar/navigation.css" rel="stylesheet" />
   </head>
   <body>
-    <table width="100%">
+    <table class="table">
       <tr>
-        <th style="text-align: left; vertical-align: top">
-          <ul style="margin-top: 0">
-            <li><a href="../profile/index.html">Account</a></li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="../home.html">Courses</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Studio</a></li>
-            <li><a href="#">Commons</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-        </th>
-        <th style="text-align: left; vertical-align: top">
-          <ul style="margin-top: 0">
-            <li><a href="#">Notification</a></li>
-            <li><a href="../profile/index.html">Profile</a></li>
-            <li><a href="#">Files</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">ePortfolios</a></li>
-            <li><a href="#">Shared Content</a></li>
-            <li><a href="#">The Hub</a></li>
-            <li><a href="#">Qwickly Course Tools</a></li>
-            <li><a href="#">Global Announcements</a></li>
-          </ul>
-        </th>
-        <th style="text-align: left; vertical-align: top">
-          <h4>Shuang Du's Profile</h4>
-          <div class="grey-line"></div>
-          <br />
-          <h1>Shuang Du</h1>
-          <button type="button">
-            <a href="../profile/edit.html">Edit Profile</a>
-          </button>
-          <h2>Contact</h2>
-          <p>No registered services, you can add some on the settings page.</p>
-          <h2>Biography</h2>
-          <p>Software Engineer, Satellite QA Engineer, Shiba lover</p>
-          <h2>Links</h2>
-          <a href="#">YouTube</a><br />
-          <a href="#">LinkedIn</a>
-          <br />
-        </th>
+        <td
+          style="padding-left: 0px; padding-top: 0px"
+          class="wd-kanbas-navigation"
+        >
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="neu-icon fab fa-neos"></i>
+            </a>
+            <a
+              href="../profile/index.html"
+              class="list-group-item list-group-item-action active"
+              aria-current="true"
+            >
+              <i class="icon-active fas fa-user-circle"></i>
+              <p class="text">Account</p>
+            </a>
+
+            <a
+              href="../dashboard/index.html"
+              class="list-group-item list-group-item-action"
+            >
+              <i class="icon fas fa-tachometer-alt"></i>
+              <p class="text">Dashboard</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="icon fas fa-book"></i>
+              <p class="text">Cources</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="icon far fa-calendar-alt"></i>
+              <p class="text">Calendar</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="icon fas fa-envelope-open-text"></i>
+              <p class="text">Inbox</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="icon fas fa-clock"></i>
+              <p class="text">History</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="icon fas fa-network-wired"></i>
+              <p class="text">Studio</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="icon fas fa-chevron-circle-right"></i>
+              <p class="text">Commons</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="icon fas fa-question-circle"></i>
+              <p class="text">Help</p>
+            </a>
+          </div>
+        </td>
+
+        <td>
+          <table width="100%">
+            <tr>
+              <td>
+                <div class="header" style="display: flex; margin-left: 20px">
+                  <span><i class="heading-icon fas fa-bars"></i></span>
+                  <span style="margin-left: 20px">Shuang Du's Profile</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <hr />
+              </td>
+            </tr>
+            <tr>
+              <td style="vertical-align: top">
+                <div class="wd-account-navigation list-group">
+                  <a href="#" class="list-group-item list-group-item-action">
+                    Notification
+                  </a>
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action active"
+                    aria-current="true"
+                  >
+                    Profile
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    Files
+                  </a>
+                  <a
+                    href="../settings/course-details.html"
+                    class="list-group-item list-group-item-action"
+                  >
+                    Settings
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    ePortfolios
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    Shared Content
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    The Hub
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    Qwickly Course Tools
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    Global Announcements
+                  </a>
+                </div>
+              </td>
+              <td style="vertical-align: top">
+                <i class="user-icon fas fa-user-circle"></i>
+                <h1>Shuang Du</h1>
+                <br /><br />
+                <h2>Contact</h2>
+                <p>
+                  No registered services, you can add some on the settings page.
+                </p>
+                <h2>Biography</h2>
+                <p>Software Engineer, Satellite QA Engineer, Shiba lover</p>
+                <h2>Links</h2>
+                <i class="fas fa-link" style="margin-right: 10px"></i>
+                <a href="https://www.youtube.com/watch?v=_Hq9n7cc8rk"
+                  >YouTube</a
+                >
+                <br />
+              </td>
+              <td style="vertical-align: top">
+                <button
+                  type="button"
+                  class="btn btn-light"
+                  style="margin-top: 20px"
+                >
+                  <i class="fas fa-pencil-alt"></i>
+                  <a
+                    class="edit-button link-offset-2 link-underline link-underline-opacity-0"
+                    href="../profile/edit.html"
+                    >Edit Profile</a
+                  >
+                </button>
+              </td>
+            </tr>
+          </table>
+        </td>
       </tr>
     </table>
   </body>
