@@ -1,0 +1,67 @@
+.list-group{
+    border-radius: 0px;}
+
+.list-group .list-group-item-secondary{
+    font-weight: bold;
+}
+
+.btn{
+    font-size: 90%;
+}
+
+.fixed-width-btn {
+    width: 220px; 
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.kanbas-nav .list-group-item{
+    text-align: left;
+    border: none;
+    background-color: white;
+}
+
+.kanbas-nav .text{
+    text-align: left;
+    display: inline;
+    font-size: 100%;
+    color: red;
+    margin-left: 20px;
+}
+
+.kanbas-nav .fa-eye-slash{
+    color: black;
+}
+
+.kanbas-nav .active {
+    color: initial;
+}
+
+.single-course-top {
+    background-color: black;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.single-course-top i {
+    color: white;
+    text-decoration: white;
+}
+
+.single-course-top a {
+    color: white;
+    text-decoration: white;
+}
+
+.single-course-top p {
+    color: white;
+    text-decoration: white;
+    text-align: center;
+}
+
+.fa-eye-slash{
+    margin-left: 15px;
+}
