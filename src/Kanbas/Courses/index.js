@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  useParams,
-  Routes,
-  Route,
-  Navigate,
-  useLocation,
-} from "react-router-dom";
+import { useParams, Routes, Route, useLocation } from "react-router-dom";
 import db from "../Database";
 import CourseNavigation from "./CourseNavigation";
 import Modules from "./Modules";
@@ -21,6 +15,7 @@ import { BiGlassesAlt } from "react-icons/bi";
 function Courses() {
   const { courseId } = useParams();
   const { pathname } = useLocation();
+  // eslint-disable-next-line no-unused-vars
   const [empty, kanbas, courses, id, screen] = pathname.split("/");
   const course = db.courses.find((course) => course._id === courseId);
   return (

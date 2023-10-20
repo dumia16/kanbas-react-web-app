@@ -1,10 +1,9 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import db from "../../Database";
 import "./index.css";
 import AssignmentItem from "./AssignmentItem";
 import AssignHeader from "./AssignHeader";
-import { FaEllipsisV } from "react-icons/fa";
 
 function Assignments() {
   const { courseId } = useParams();

@@ -1,5 +1,4 @@
 import ModuleList from "../Modules/ModuleList";
-import { FaPlus, FaEllipsisV } from "react-icons/fa";
 import "./index.css";
 import Sidebar from "./sidebar";
 import "./sidebar.css";
