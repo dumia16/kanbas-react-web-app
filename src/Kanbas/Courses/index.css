@@ -1,0 +1,31 @@
+
+
+.icon{
+    color: red;
+    margin-right: 10px;
+}
+
+.header{
+    margin-left: 10px;
+    width:100%;
+    font-size: 0.5em;
+    margin-top: 15px;
+}
+
+p{
+    color: gray;
+    font-style: italic;
+    font-size: 0.5em;
+    margin-left: 15px;
+}
+
+.icon-down{
+    color: gray;
+}
+
+div span{
+    color: red;
+}
+
+
+

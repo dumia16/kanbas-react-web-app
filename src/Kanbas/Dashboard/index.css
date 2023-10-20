@@ -1,0 +1,72 @@
+.dashboard-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  
+  h1, h2 {
+    color: #333;
+  }
+
+  h2{
+    margin-left: 5%;
+  }
+  
+  hr {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .row {
+    margin-left: 10%;
+    margin-right: 0;
+    padding-left: 5%;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-body {
+    position: relative;
+  }
+  
+  .card-title {
+    font-size: 1em;
+    margin-bottom: 5px;
+  }
+  
+  .card-number {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  .card-dates {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+  }
+  
+  .card-icons {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  
+  .course-link {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    transition: 0.3s;
+  }
+  
+  .course-link:hover {
+    color: red;
+    text-decoration: underline;
+  }
+  
