@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { FaCheckCircle } from "react-icons/fa";
 import { RxDragHandleDots2 } from "react-icons/rx";
@@ -19,15 +19,6 @@ function AssignmentItem({ assignment, courseId }) {
     if (isConfirmed) {
       dispatch(deleteAssignment(assignment._id));
     }
-  };
-
-  const handleConfirmDelete = (e) => {
-    e.preventDefault();
-    dispatch(deleteAssignment(assignment._id));
-  };
-
-  const handleCancelDelete = (e) => {
-    e.preventDefault();
   };
 
   return (

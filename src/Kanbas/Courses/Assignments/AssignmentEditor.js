@@ -3,7 +3,6 @@ import { useNavigate, useParams, Link } from "react-router-dom";
 import "./index.css";
 import {
   setAssignment,
-  selectAssignment,
   addAssignment,
   updateAssignment,
 } from "./assignmentsReducer";
@@ -11,9 +10,9 @@ import { useDispatch, useSelector } from "react-redux";
 
 function AssignmentEditor() {
   let assignment = useSelector((state) => state.assignmentsReducer.assignment);
-  const assignments = useSelector(
-    (state) => state.assignmentsReducer.assignments
-  );
+  // const assignments = useSelector(
+  //   (state) => state.assignmentsReducer.assignments
+  // );
   const dispatch = useDispatch();
   const { courseId } = useParams();
   const { assignmentId } = useParams();
