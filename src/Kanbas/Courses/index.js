@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams, Routes, Route, useLocation } from "react-router-dom";
-import db from "../Database";
 import CourseNavigation from "./CourseNavigation";
 import Modules from "./Modules";
 import Home from "./Home";
@@ -12,12 +11,12 @@ import "./index.css";
 import { AiOutlineRight } from "react-icons/ai";
 import { BiGlassesAlt } from "react-icons/bi";
 
-function Courses() {
+function Courses({ courses }) {
   const { courseId } = useParams();
   const { pathname } = useLocation();
   // eslint-disable-next-line no-unused-vars
-  const [empty, kanbas, courses, id, screen] = pathname.split("/");
-  const course = db.courses.find((course) => course._id === courseId);
+  const [empty, kanbas, course_str, id, screen] = pathname.split("/");
+  const course = courses.find((course) => course._id === courseId);
   return (
     <div>
       <div className="header d-flex justify-content-between align-items-center">

@@ -87,3 +87,11 @@ h2{
   .edit-header{
     margin-top: 40px;
   }
+
+  .delete-button{
+    margin-left: 50px;
+  }
+
+  .yes-button{
+    margin-left: 20px;
+  }

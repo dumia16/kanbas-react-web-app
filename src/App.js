@@ -8,6 +8,8 @@ import Assignment3 from "./Labs/a3";
 import Assignment4 from "./Labs/a4";
 import Assignment5 from "./Labs/a5";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import { Provider } from "react-redux";
+import store from "./Labs/store";
 
 function App() {
   return (
@@ -38,16 +40,18 @@ function App() {
     //    </HashRouter>
 
     <HashRouter>
-      <div>
-        <Routes>
-          <Route path="/" element={<Navigate to="/hello" />} />
-          <Route path="/hello" element={<HelloWorld />} />
-          <Route path="/Labs/a3/*" element={<Assignment3 />} />
-          <Route path="/Labs/a4/*" element={<Assignment4 />} />
-          <Route path="/Labs/a5/*" element={<Assignment5 />} />
-          <Route path="/Kanbas/*" element={<Kanbas />} />
-        </Routes>
-      </div>
+      <Provider store={store}>
+        <div>
+          <Routes>
+            <Route path="/" element={<Navigate to="/hello" />} />
+            <Route path="/hello" element={<HelloWorld />} />
+            <Route path="/Labs/a3/*" element={<Assignment3 />} />
+            <Route path="/Labs/a4/*" element={<Assignment4 />} />
+            <Route path="/Labs/a5/*" element={<Assignment5 />} />
+            <Route path="/Kanbas/*" element={<Kanbas />} />
+          </Routes>
+        </div>
+      </Provider>
     </HashRouter>
   );
 }
