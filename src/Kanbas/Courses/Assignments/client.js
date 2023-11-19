@@ -1,17 +1,18 @@
 import axios from "axios";
-const ASSIGNMENT_URL = "http://localhost:4000/api/assignments";
-const COURSES_URL = "http://localhost:4000/api/courses";
+import { ASSIGNMENTS_URL } from "../../../constant";
+// const ASSIGNMENT_URL = "http://localhost:4000/api/assignments";
+// const COURSES_URL = "http://localhost:4000/api/courses";
 
 export const updateAssignment = async (assignment) => {
   const response = await axios.put(
-    `${ASSIGNMENT_URL}/${assignment._id}`,
+    `${ASSIGNMENTS_URL}/${assignment._id}`,
     assignment
   );
   return response.data;
 };
 
 export const deleteAssignment = async (assignmentId) => {
-  const response = await axios.delete(`${ASSIGNMENT_URL}/${assignmentId}`);
+  const response = await axios.delete(`${ASSIGNMENTS_URL}/${assignmentId}`);
   return response.data;
 };
 
