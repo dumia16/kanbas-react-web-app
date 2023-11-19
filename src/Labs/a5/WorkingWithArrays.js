@@ -43,7 +43,7 @@ function WorkingWithArrays() {
     try {
       await axios.put(`${API_BASE}/a5/todos/${todo.id}`, todo);
       setTodos(todos.map((t) => (t.id === todo.id ? todo : t)));
-      setTodo({});
+      // setTodo({});
     } catch (error) {
       console.log(error);
       setErrorMessage(error.response.data.message);
@@ -75,7 +75,7 @@ function WorkingWithArrays() {
 
   const updateCompleted = async () => {
     const response = await axios.get(
-      `${API_BASE}/a5/todos//${todo.id}/completed/${todo.completed}`
+      `${API_BASE}/a5/todos/${todo.id}/completed/${todo.completed}`
     );
     setTodos(response.data);
   };
@@ -132,10 +132,10 @@ function WorkingWithArrays() {
           onChange={(e) =>
             setTodo({
               ...todo,
-              completed: e.target.checked,
+              completed: e.target.checked.toString(),
             })
           }
-          value={todo.completed}
+          checked={todo.completed === "true"}
           type="checkbox"
         />
         Completed
