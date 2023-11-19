@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
 import axios from "axios";
+import { COURSES_URL } from "../constant";
 
 function Kanbas() {
   const [courses, setCourses] = useState([]);

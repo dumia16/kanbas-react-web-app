@@ -1,5 +1,5 @@
 import axios from "axios";
-import { ASSIGNMENTS_URL } from "../../../constant";
+import { ASSIGNMENTS_URL, COURSES_URL } from "../../../constant";
 // const ASSIGNMENT_URL = "http://localhost:4000/api/assignments";
 // const COURSES_URL = "http://localhost:4000/api/courses";
 

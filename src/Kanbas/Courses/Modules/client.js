@@ -1,5 +1,5 @@
 import axios from "axios";
-import { MODULES_URL } from "../../../constant";
+import { COURSES_URL, MODULES_URL } from "../../../constant";
 // const COURSES_URL = "http://localhost:4000/api/courses";
 // const MODULES_URL = "http://localhost:4000/api/modules";
 

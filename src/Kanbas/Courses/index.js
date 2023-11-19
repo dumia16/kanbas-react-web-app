@@ -12,6 +12,7 @@ import { AiOutlineRight } from "react-icons/ai";
 import { BiGlassesAlt } from "react-icons/bi";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { COURSES_URL } from "../../constant";
 
 function Courses() {
   const { courseId } = useParams();
