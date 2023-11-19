@@ -2,7 +2,7 @@ import Nav from "../../Nav";
 import EncodingParametersInURLs from "./EncodingParametersInURLs";
 import WorkingWithObjects from "./WorkingWithObjects";
 import WorkingWithArrays from "./WorkingWithArrays";
-import { API_BASE, COURSES_URL } from "../../constant";
+import { API_BASE } from "../../constant";
 
 function Assignment5() {
   return (
