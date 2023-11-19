@@ -6,20 +6,32 @@ import { TfiWrite } from "react-icons/tfi";
 import "./index.css";
 import { useDispatch } from "react-redux";
 import { deleteAssignment, setAssignment } from "./assignmentsReducer";
+import * as client from "./client";
 
 function AssignmentItem({ assignment, courseId }) {
   const dispatch = useDispatch();
 
-  const handleDeleteClick = (e, assignment) => {
+  const handleDeleteAssignment = (e, assignment) => {
     e.preventDefault();
-    console.log("handleDeleteClick");
     const isConfirmed = window.confirm(
       "Are you sure you want to delete this assignment?"
     );
     if (isConfirmed) {
-      dispatch(deleteAssignment(assignment._id));
+      client.deleteAssignment(assignment._id).then(() => {
+        dispatch(deleteAssignment(assignment._id));
+      });
     }
   };
+
+  // const handleDeleteClick = (e, assignment) => {
+  //   e.preventDefault();
+  //   const isConfirmed = window.confirm(
+  //     "Are you sure you want to delete this assignment?"
+  //   );
+  //   if (isConfirmed) {
+  //     dispatch(deleteAssignment(assignment._id));
+  //   }
+  // };
 
   return (
     <Link
@@ -34,7 +46,7 @@ function AssignmentItem({ assignment, courseId }) {
           {assignment.title}
           <button
             className="btn btn-danger delete-button"
-            onClick={(e) => handleDeleteClick(e, assignment)}
+            onClick={(e) => handleDeleteAssignment(e, assignment)}
           >
             Delete
           </button>

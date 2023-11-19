@@ -4,17 +4,30 @@ import "./index.css";
 import AssignmentItem from "./AssignmentItem";
 import AssignHeader from "./AssignHeader";
 import { useSelector } from "react-redux";
+import { useEffect } from "react";
+import { findAssignmentsForCourse } from "./client";
+import { setAssignments } from "./assignmentsReducer";
+import { useDispatch } from "react-redux";
 
 function Assignments() {
   const { courseId } = useParams();
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    findAssignmentsForCourse(courseId).then((assignments) =>
+      dispatch(setAssignments(assignments))
+    );
+  }, [courseId, dispatch]);
 
   const assignments = useSelector(
     (state) => state.assignmentsReducer.assignments
   );
+  console.log(assignments);
 
   const courseAssignments = assignments.filter(
     (assignment) => assignment.course === courseId
   );
+  console.log(courseAssignments);
   return (
     <div>
       <AssignHeader courseId={courseId} />

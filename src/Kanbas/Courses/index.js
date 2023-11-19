@@ -10,13 +10,25 @@ import { BsList } from "react-icons/bs";
 import "./index.css";
 import { AiOutlineRight } from "react-icons/ai";
 import { BiGlassesAlt } from "react-icons/bi";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-function Courses({ courses }) {
+function Courses() {
   const { courseId } = useParams();
   const { pathname } = useLocation();
+  const URL = "http://localhost:4000/api/courses";
+  const [course, setCourse] = useState({});
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(`${URL}/${courseId}`);
+    setCourse(response.data);
+  };
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
   // eslint-disable-next-line no-unused-vars
   const [empty, kanbas, course_str, id, screen] = pathname.split("/");
-  const course = courses.find((course) => course._id === courseId);
+  // const course = courses.find((course) => course._id === courseId);
   return (
     <div>
       <div className="header d-flex justify-content-between align-items-center">
@@ -45,7 +57,7 @@ function Courses({ courses }) {
           }}
         >
           <Routes>
-            <Route path="/" element={<Assignments />} />
+            <Route path="/" element={<Home />} />
             <Route path="Home" element={<Home />} />
             <Route path="Modules" element={<Modules />} />
             <Route path="Assignments" element={<Assignments />} />
