@@ -2,8 +2,11 @@ import Nav from "../../Nav";
 import EncodingParametersInURLs from "./EncodingParametersInURLs";
 import WorkingWithObjects from "./WorkingWithObjects";
 import WorkingWithArrays from "./WorkingWithArrays";
+import { COURSES_URL } from "../../constant";
 
 function Assignment5() {
+  console.log("COURSES_URL");
+  console.log(COURSES_URL);
   return (
     <div>
       <Nav />
