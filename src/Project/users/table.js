@@ -60,9 +60,12 @@ function UserTable() {
   };
 
   const fetchUsersByRole = async (role) => {
-    console.log("role", role);
-    const users = await client.findUsersByRole(role);
-    console.log("users", users);
+    let users = [];
+    if (role === "USER") {
+      users = await client.findAllUsers();
+    } else {
+      users = await client.findUsersByRole(role);
+    }
     setRole(role);
     setUsers(users);
   };
