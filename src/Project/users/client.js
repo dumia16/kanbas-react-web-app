@@ -48,7 +48,7 @@ export const signout = async () => {
 };
 
 export const findUsersByRole = async (role) => {
-  const response = await request.get(`${USERS_API}?role=${role}`);
+  const response = await request.get(`${USERS_API}/role/${role}`);
   return response.data;
 };
 
